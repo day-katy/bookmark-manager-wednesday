@@ -1,26 +1,50 @@
-<!-- As a <Stakeholder>,
-So that <Motivation>,
-I'd like <Task>. -->
+# Bookmark Manager
 
-As someone who likes to use bookmarks, 
-So that I can keep track of my most visited websites,
-I'd like to see a list of bookmarks
+This code is intended as a supplementary guide for [bookmark manager](https://github.com/makersacademy/course/tree/master/bookmark_manager). The commits on master branch roughly correspond with the walkthroughs provided in the challenge.
 
-| Nouns      | Verbs |
-| ----------- | -------- |
-| Someone   | Likes to use      |
-| Bookmarks   | Show     |
-| Websites|Keep track of, visited|
+## User Stories
 
+```
+As a time-pressed user
+So that I can quickly go to web sites I regularly visit
+I would like to see a list of bookmarks
+```
 
-BROWSWER (CLIENT) ----> CONTROLLER ----> MODEL -----> VIEW ----> BROWSER (CLIENT)
-/bookmarks --> app.rb <--> bookmarks.rb --> bookmarks.erb --> /bookmarks
+## Domain Model
+
+![Bookmark Manager domain model](./public/images/bookmark_manager_1.png)
 
 
-![image](https://github.com/makersacademy/course/blob/master/bookmark_manager/images/bookmark_manager_1.png?raw=true)
+## How to use
 
-| Component   | Responsibility                                | Refactor                                |
-|------------ |---------------------------------------------  |---------------------------------------- |
-| Model       | Encapsulate logic with relevant data          | Encapsulate bookmark data in a class    |
-| View        | Display the result to a user                  | Show the bookmark data in a list        |
-| Controller  | Get data from the model and put in the view   | Render bookmark data into to the view   |
+### To set up the project
+
+Clone this repository and then run:
+
+```
+bundle
+```
+
+### To set up the database
+
+Connect to `psql` and create the `bookmark_manager` database:
+
+```
+CREATE DATABASE bookmark_manager;
+```
+
+To set up the appropriate tables, connect to the database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.
+
+### To run the Bookmark Manager app:
+
+```
+ruby app.rb
+```
+
+To view bookmarks, navigate to `localhost:4567/bookmarks`.
+
+### To run tests:
+
+```
+rspec
+```
