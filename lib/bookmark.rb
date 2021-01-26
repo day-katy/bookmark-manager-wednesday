@@ -13,4 +13,5 @@ class Bookmark
   def self.all
     BOOKMARKS
   end
+  
 end
