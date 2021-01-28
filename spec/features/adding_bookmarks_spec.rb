@@ -1,6 +1,6 @@
 feature "adding bookmarks" do
   scenario "adding a new URL to bookmark list" do
-    visit('/bookmarks/new')
+    visit('/bookmarks')
     fill_in('url', :with => 'http://www.twitter.com')
     fill_in('title', :with => 'Twitter')
     click_button("Add bookmark")
