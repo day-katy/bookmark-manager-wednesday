@@ -44,3 +44,13 @@ I want to delete a bookmark
 | Nouns | Verbs                                 |
 | ----- | ------------------------------------- |
 | User  | Delete bookmarks to list of bookmarks |
+
+### User Story 4
+
+As a user,
+So I can update my bookmarks,
+I want to update my bookmarks.
+
+| Nouns | Verbs                                     |
+| ----- | ----------------------------------------- |
+| User  | Update bookmarks in the list of bookmarks |
