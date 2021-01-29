@@ -34,3 +34,13 @@ I'd like to add new bookmarks to my list of bookmarks.
 | Nouns | Verbs                                  |
 | ----- | -------------------------------------- |
 | User  | Add new bookmarks to list of bookmarks |
+
+### User Story 3
+
+As a user
+So I can remove my bookmark from Bookmark Manager
+I want to delete a bookmark
+
+| Nouns | Verbs                                 |
+| ----- | ------------------------------------- |
+| User  | Delete bookmarks to list of bookmarks |
