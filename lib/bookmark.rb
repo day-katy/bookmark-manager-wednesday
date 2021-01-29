@@ -1,5 +1,5 @@
 require 'pg'
-require 'database_connection'
+require './lib/database_connection'
 
 class Bookmark
   attr_reader :id, :title, :url
